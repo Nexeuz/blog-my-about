@@ -1,1 +1,13 @@
-<router-outlet></router-outlet>
+<div [ngClass]="{'dark-theme': (themeService.theme$ | async)}">
+  <mat-sidenav-container class="example-container">
+    <mat-sidenav mode="side">Sidenav content</mat-sidenav>
+    <mat-sidenav-content>
+        <app-header></app-header>
+        <div class="page-container">
+          <app-about-me-card>
+          </app-about-me-card>
+        </div>
+
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

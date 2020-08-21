@@ -17,6 +17,18 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "allowedCommonJsDependencies": [
+              "firebase",
+              "@angular/common/locales/es",
+              "@firebase/app",
+              "@firebase/auth",
+              "@firebase/component",
+              "@firebase/util",
+              "@firebase/functions",
+              "@firebase/firestore",
+              "@firebase/performance",
+              "@firebase/remote-config"
+            ],
             "outputPath": "dist/my-about",
             "index": "projects/my-about/src/index.html",
             "main": "projects/my-about/src/main.ts",
@@ -29,7 +41,8 @@
               "projects/my-about/src/manifest.webmanifest"
             ],
             "styles": [
-              "projects/my-about/src/styles.scss"
+              "projects/my-about/src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap-grid.min.css"
             ],
             "scripts": []
           },
@@ -37,8 +50,8 @@
             "production": {
               "fileReplacements": [
                 {
-                  "replace": "projects/my-about/src/environments/environment.ts",
-                  "with": "projects/my-about/src/environments/environment.prod.ts"
+                  "replace": "environments/environment.ts",
+                  "with": "environments/environment.prod.ts"
                 }
               ],
               "optimization": true,
@@ -125,6 +138,10 @@
               "devServerTarget": "my-about:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
     }

@@ -1,0 +1,31 @@
+@import "../../../../util-styles/mixins";
+.toolbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  div {
+    width: 100%;
+  }
+  &__first-container {
+
+  }
+  &__middle-container {
+    text-align: center;
+
+  }
+
+   &__end-container {
+
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-end;
+    gap: 10px;
+   }
+}
+
+.app_logo {
+  width: 30vw;
+  max-height: 100%;
+}

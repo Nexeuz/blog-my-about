@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "nexeuz-about": {
+      "hosting": {
+        "my-about": [
+          "nexeuz-about"
+        ]
+      }
+    }
+  }
+}

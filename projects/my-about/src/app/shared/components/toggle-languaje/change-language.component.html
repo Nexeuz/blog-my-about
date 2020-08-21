@@ -1,0 +1,12 @@
+<ng-container *ngIf="toggle; else english">
+  <div matRipple class="button-toggle__btn-change"  aria-labelledby="button toggle" (click)="toggleLanguage()"  >
+    <img alt="language spanish" class="language-icon" src="assets/logo/colombia.png">
+    <span>ES</span>
+  </div>
+</ng-container>
+<ng-template #english>
+  <div matRipple class="button-toggle__btn-change" aria-labelledby="button toogle" (click)="toggleLanguage()"  >
+    <img alt="language english" class="language-icon" src="assets/logo/uk.png">
+    <span>EN</span>
+  </div>
+</ng-template>

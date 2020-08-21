@@ -1,0 +1,31 @@
+@import "../../../util-styles/mixins";
+
+h1 {
+  text-align: center;
+  margin: 0;
+}
+
+h3 {
+  text-align: center;
+}
+
+.about-me-card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  @include lg() {
+    margin-top: 81px;
+  }
+  mat-card {
+    max-width: 85vw;
+    app-about-me-card-profile {
+      @include lg() {
+        position: relative;
+        top: -81px;
+      }
+
+    }
+  }
+}
