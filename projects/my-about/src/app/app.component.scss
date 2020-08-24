@@ -1,3 +1,11 @@
 .page-container  {
+  justify-content: center;
+  flex-direction: column;
   padding: 15px;
+
+  app-about-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

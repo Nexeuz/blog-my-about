@@ -27,7 +27,8 @@
               "@firebase/functions",
               "@firebase/firestore",
               "@firebase/performance",
-              "@firebase/remote-config"
+              "@firebase/remote-config",
+              "lodash"
             ],
             "outputPath": "dist/my-about",
             "index": "projects/my-about/src/index.html",
@@ -41,8 +42,7 @@
               "projects/my-about/src/manifest.webmanifest"
             ],
             "styles": [
-              "projects/my-about/src/styles.scss",
-              "node_modules/bootstrap/dist/css/bootstrap-grid.min.css"
+              "projects/my-about/src/styles.scss"
             ],
             "scripts": []
           },
@@ -148,6 +148,7 @@
   },
   "defaultProject": "my-about",
   "cli": {
-    "defaultCollection": "@datorama/akita"
+    "defaultCollection": "@datorama/akita",
+    "analytics": "6c9555f2-233b-4f5c-8a3a-777bc231724e"
   }
 }

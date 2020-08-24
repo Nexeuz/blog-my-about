@@ -15,16 +15,19 @@ h3 {
   justify-content: center;
   align-items: center;
   width: 100%;
-  @include lg() {
     margin-top: 81px;
+
+
+  &__text {
+      margin-top: -64px;
+
   }
+
   mat-card {
     max-width: 85vw;
     app-about-me-card-profile {
-      @include lg() {
         position: relative;
         top: -81px;
-      }
 
     }
   }

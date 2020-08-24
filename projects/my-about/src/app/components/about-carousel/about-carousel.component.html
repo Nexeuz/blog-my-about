@@ -1,0 +1,26 @@
+<div #divElement id="about-carousel-container">
+  <div app-carousel
+       [width]="divElement.offsetWidth"
+       [items]="items"
+       [$item]="itemTemplate"
+       [$prev]="prevTemplate"
+       [$next]="nextTemplate">
+  </div>
+  <ng-template #prevTemplate>
+      <mat-icon>keyboard_arrow_left</mat-icon>
+  </ng-template>
+
+  <ng-template #nextTemplate>
+      <mat-icon>keyboard_arrow_right</mat-icon>
+  </ng-template>
+
+  <ng-template let-thumbnail  #itemTemplate>
+    <mat-card class="container-img">
+      <mat-card-content>
+          <img width="150" height="100" [alt]="thumbnail.name" [src]="thumbnail.thumbnail">
+          <small>{{thumbnail.name}}</small>
+      </mat-card-content>
+    </mat-card>
+  </ng-template>
+</div>
+

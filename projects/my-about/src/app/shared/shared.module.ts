@@ -9,20 +9,22 @@ import { ToggleThemeComponent } from './components/toggle-theme/toggle-theme.com
 import { ChangeLanguageComponent } from './components/toggle-languaje/change-language.component';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatRippleModule} from '@angular/material/core';
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 
 
 @NgModule({
-  declarations: [HeaderComponent, BtnContactComponent, ToggleThemeComponent, ChangeLanguageComponent],
+  declarations: [HeaderComponent, BtnContactComponent, ToggleThemeComponent, ChangeLanguageComponent, CarouselComponent],
     imports: [
         CommonModule,
         MatButtonModule,
         MatIconModule,
         MatToolbarModule,
         MatMenuModule,
-        MatRippleModule
+        MatRippleModule,
     ], exports: [
-    HeaderComponent
+    HeaderComponent,
+    CarouselComponent
   ]
 })
 export class SharedModule { }
