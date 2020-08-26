@@ -1,4 +1,6 @@
 import {ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import {MatDialog} from '@angular/material/dialog';
+import {AboutCarouselModalComponent} from '../about-carousel-modal/about-carousel-modal.component';
 
 @Component({
   selector: 'app-about-carousel',
@@ -7,6 +9,8 @@ import {ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AboutCarouselComponent implements OnInit {
+
+
   items = [
     {
       thumbnail: 'https://i.pinimg.com/originals/74/00/de/7400def3d411768dfdd0205c5cc347e6.gif',
@@ -25,10 +29,18 @@ export class AboutCarouselComponent implements OnInit {
       thumbnail: 'https://i.pinimg.com/originals/74/00/de/7400def3d411768dfdd0205c5cc347e6.gif',
       name: '4'
     }
-  ];
-  constructor() { }
+  ]
+
+  constructor(private matDialog: MatDialog) {
+  }
 
   ngOnInit(): void {
   }
 
+  openModalProjectDetail(): void {
+    this.matDialog.open(AboutCarouselModalComponent, {
+      height: '80vh',
+      width: '80vw'
+    });
+  }
 }

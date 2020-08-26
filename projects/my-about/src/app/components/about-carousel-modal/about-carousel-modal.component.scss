@@ -1,0 +1,21 @@
+mat-dialog-content {
+  display: flex;
+  flex-direction: column;
+  .about-carousel-modal-img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 30px;
+    img {
+      width: 544px;
+      height: auto;
+      max-width:  100%;
+    }
+  }
+}
+
+.mat-dialog-actions {
+  position: absolute;
+  bottom: 15.1vh;
+  right: 15vw;
+}
