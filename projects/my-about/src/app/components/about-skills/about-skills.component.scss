@@ -1,0 +1,39 @@
+@import "../../../util-styles/mixins";
+.container-about-skills-card {
+  @include lg() {
+    max-width: 1200px;
+  }
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+
+  &__chip-container {
+    @include sm() {
+      max-width: 100%;
+    }
+    @include md() {
+      max-width: 70%;
+    }
+  }
+  mat-divider {
+    position: initial;
+  }
+
+  .margin-vertical {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .margin-horizontal {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  &__btn {
+     align-self: center;
+    button {
+      max-width: 300px;
+    }
+  }
+}

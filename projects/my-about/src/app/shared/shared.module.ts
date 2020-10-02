@@ -10,11 +10,13 @@ import { ChangeLanguageComponent } from './components/toggle-languaje/change-lan
 import {MatMenuModule} from '@angular/material/menu';
 import {MatRippleModule} from '@angular/material/core';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { PdfViewerComponent } from './components/pdf-viewer/pdf-viewer.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 
 @NgModule({
-  declarations: [HeaderComponent, BtnContactComponent, ToggleThemeComponent, ChangeLanguageComponent, CarouselComponent],
+  declarations: [HeaderComponent, BtnContactComponent, ToggleThemeComponent, ChangeLanguageComponent, CarouselComponent, PdfViewerComponent, FooterComponent],
     imports: [
         CommonModule,
         MatButtonModule,

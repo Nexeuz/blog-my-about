@@ -26,6 +26,7 @@
               "@firebase/util",
               "@firebase/functions",
               "@firebase/firestore",
+              "@angular/fire/firestore",
               "@firebase/performance",
               "@firebase/remote-config",
               "lodash"

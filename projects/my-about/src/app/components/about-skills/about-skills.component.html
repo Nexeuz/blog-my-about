@@ -1,0 +1,47 @@
+<mat-card>
+  <mat-card-content>
+    <div #divElement class="container-about-skills-card">
+      <div class="container-about-skills-card__chip-container">
+        <mat-chip-list  aria-label="Abilities list">
+          <mat-chip>One fish</mat-chip>
+          <mat-chip>Two fish</mat-chip>
+          <mat-chip>Two fiswddsh</mat-chip>
+          <mat-chip>Two fisdsh</mat-chip>
+          <mat-chip>Two fish</mat-chip>
+          <mat-chip>Two fisdssdh</mat-chip>
+          <mat-chip>Two fisdh</mat-chip>
+          <mat-chip>Two fisdh</mat-chip>
+          <mat-chip>Two fisdsh</mat-chip>
+          <mat-chip>Two fish</mat-chip>
+          <mat-chip>Two fisdh</mat-chip>
+          <mat-chip>Two fisdh</mat-chip>
+          <mat-chip>Two fisdh</mat-chip>
+          <mat-chip>Twdo fish</mat-chip>
+          <mat-chip>Twod fish</mat-chip>
+          <mat-chip>Two dfish</mat-chip>
+          <mat-chip>Two fdish</mat-chip>
+          <mat-chip>Twodd fish</mat-chip>
+          <mat-chip>Two ddfish</mat-chip>
+          <mat-chip>Two ddfish</mat-chip>
+          <mat-chip>Two fddish</mat-chip>
+          <mat-chip>Two fddish</mat-chip>
+          <mat-chip>Two dfish</mat-chip>
+
+          <mat-chip color="primary" selected>Primary fish</mat-chip>
+          <mat-chip color="accent" selected>Accent fish</mat-chip>
+        </mat-chip-list>
+      </div>
+
+      <mat-divider [ngClass]="
+      {'margin-vertical': divElement.offsetWidth >= 600, 'margin-horizontal': divElement.offsetWidth <= 600}"
+                   [vertical]="(divElement.offsetWidth >= 600)">
+      </mat-divider>
+      <div class="container-about-skills-card__btn">
+        <button (click)="openPDF()" color="primary" mat-raised-button>
+          <mat-icon>assignment</mat-icon>
+          Ver CV
+        </button>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>

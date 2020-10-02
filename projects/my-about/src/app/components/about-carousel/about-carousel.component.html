@@ -17,7 +17,7 @@
   <ng-template let-thumbnail #itemTemplate>
     <mat-card  (click)="openModalProjectDetail()" class="about-card-carousel-card">
       <mat-card-content>
-          <img width="150" height="100" [alt]="thumbnail.name" [src]="thumbnail.thumbnail">
+          <img  [alt]="thumbnail.name" [src]="thumbnail.thumbnail">
       </mat-card-content>
     </mat-card>
   </ng-template>
